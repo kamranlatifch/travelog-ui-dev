@@ -18,7 +18,7 @@ module.exports = {
     },
     fontFamily: {
       poppins: ['Poppins'],
-      dmSans: ['DM Sans'],
+      inter: ['Inter'],
     },
     extend: {
       colors: {
@@ -30,18 +30,20 @@ module.exports = {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',
         },
-        tertiary: '#F4F5F6',
-        emeraldGreen: '#58C27D',
-        bluePeriwinkle: '#92A5EF',
-        yellowStar: '#FFD166',
-        skyBlue: '#8BC5E5',
-        ashGray: '#23262F',
-        blackBg: '#23262F',
-        bgGray: '#E6E8EC',
-        textPrimary: '#23262F',
-        textPrimaryDark: '#353945',
-        textSecondary: '#777E90',
-        textBase: '#FFFFFF',
+        purpleBg: '#5D50C6',
+        orangeBg: '#FF5722',
+        yellowBg: '#FACD49',
+        cardBg: '#FFFFFF',
+        subscribeBg: '#FACD4914',
+
+        textPrimary: '#000000',
+        textLight: '#EEEEEE',
+        textPrimaryDark: '#191825',
+        textPrimaryHigherRatio: '#191825BF',
+        textPink: '#F85E9F',
+        textOrange: '#FF5722',
+        textLink: '#19182580',
+
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -88,9 +90,8 @@ module.exports = {
       backdropBlur: {
         32: '32px',
       },
+
       backgroundImage: {
-        // 'signup-bg': 'url('/src/assets/images/heroImage.png')',
-        // 'signup-lg-bg': 'url('/src/assets/images/hero1Image.png')',
         'custom-gradient':
           'linear-gradient(180deg, #F4F5F6 87.16%, rgba(244, 245, 246, 0) 137.55%)',
         'lg-hero-image-gradient':
@@ -105,6 +106,28 @@ module.exports = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+      },
+      keyframes: {
+        'accordion-down': {
+          from: {
+            height: '0',
+          },
+          to: {
+            height: 'var(--radix-accordion-content-height)',
+          },
+        },
+        'accordion-up': {
+          from: {
+            height: 'var(--radix-accordion-content-height)',
+          },
+          to: {
+            height: '0',
+          },
+        },
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
   },
