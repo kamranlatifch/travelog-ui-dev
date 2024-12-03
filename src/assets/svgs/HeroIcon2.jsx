@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeroIcon2 = () => {
+const HeroIcon2 = ({ className }) => {
   return (
     <svg
       width='65'
@@ -8,6 +8,7 @@ const HeroIcon2 = () => {
       viewBox='0 0 65 89'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className={className}
     >
       <g filter='url(#filter0_ddd_602_35)'>
         <rect

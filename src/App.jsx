@@ -17,7 +17,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from '@components';
-import { Navbar } from '@pages';
+import { Navbar, Hero } from '@pages';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
       {/* <div class='hidden lg:flex xl:hidden w-[500px] h-[500px] absolute top-[-223px] left-[-356px] bg-[#FF5722] opacity-[0.2] backdrop-blur-[500px] rounded-full'></div> */}
 
       <Navbar />
+      <Hero />
     </div>
   );
 }
