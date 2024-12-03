@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
 
         <Sheet>
-          <SheetTrigger className='bg-transparent xl:hidden -mr-6'>
+          <SheetTrigger className='bg-transparent xl:hidden  p-0'>
             <Humberger />
           </SheetTrigger>
           <SheetContent>

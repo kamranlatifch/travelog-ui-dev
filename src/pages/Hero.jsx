@@ -14,7 +14,7 @@ import { Button } from '@components';
 
 const Hero = () => {
   return (
-    <div className='relative flex flex-col xl:flex-row-reverse gap-8 lg:gap-[70px] px-4 lg:px-16 lg:py-16 lg:w-[896px] xl:w-[1184px] lg:mx-auto'>
+    <div className='relative flex flex-col xl:flex-row-reverse gap-8 lg:gap-[70px] px-4 py-8 lg:px-16 lg:py-16 lg:w-[896px] xl:w-[1184px] lg:mx-auto'>
       <div className='relative flex mx-auto bg-hero-bg bg-no-repeat bg-contain px-12 w-[396px] h-[366px] lg:w-[772px] lg:h-[713px] lg:justify-center lg:items-center'>
         <div className='flex flex-row pt-[32px] lg:pt-[62px] xl:pt-[32px] xl:pl-[41px] xl:pr-[41px] xl:w-[575px] gap-4 justify-center items-center '>
           <div className='flex flex-col gap-4'>
@@ -70,7 +70,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <Arrows className='hidden lg:flex absolute -left-6 -bottom-4 xl:-bottom-16 xl:-left-12' />
+      <Arrows className='hidden lg:flex absolute -left-6 -bottom-4 xl:-bottom-12 xl:-left-20' />
     </div>
   );
 };

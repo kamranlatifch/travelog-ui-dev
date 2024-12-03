@@ -6,3 +6,8 @@ export { HeroMapIcon } from './HeroMapIcon';
 export { HeroExploreIcon } from './HeroExploreIcon';
 export { VideoPlayIcon } from './VideoPlayIcon';
 export { Arrows } from './Arrows';
+export { ClientTripAdvisor } from './ClientTripAdvisor';
+export { ClientExpedia } from './ClientExpedia';
+export { ClientBooking } from './ClientBooking';
+export { ClientAirBnB } from './ClientAirBnB';
+export { ClientOrbits } from './ClientOrbits';
