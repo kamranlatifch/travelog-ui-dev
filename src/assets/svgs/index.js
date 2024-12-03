@@ -5,3 +5,4 @@ export { HeroIcon2 } from './HeroIcon2';
 export { HeroMapIcon } from './HeroMapIcon';
 export { HeroExploreIcon } from './HeroExploreIcon';
 export { VideoPlayIcon } from './VideoPlayIcon';
+export { Arrows } from './Arrows';

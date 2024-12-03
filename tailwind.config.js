@@ -10,8 +10,7 @@ module.exports = {
       padding: '4.375rem',
     },
     screens: {
-      xs: '325px',
-      sm: '375px',
+      sm: '430px',
       md: '768px',
       lg: '1024px',
       xl: '1440px',
@@ -40,6 +39,7 @@ module.exports = {
         textLight: '#EEEEEE',
         textPrimaryDark: '#191825',
         textPrimaryHigherRatio: '#191825BF',
+
         textPink: '#F85E9F',
         textOrange: '#FF5722',
         textLink: '#19182580',
@@ -83,7 +83,7 @@ module.exports = {
       },
       boxShadow: {
         [`soft`]: '-4px 4px 13px 0px rgba(0, 0, 0, 0.05)',
-        cardShadow: '1px 12px 24px 0px rgba(0, 0, 0, 0.11)',
+        cardShadow: '0px 22.07px 13.35px 0px #0000000D',
         primaryShadow: '0px 40px 64px -32px #0F0F0F1A',
         mdCardShadow: 'box-shadow: 0px 40px 64px -32px #0F0F0F1A',
       },
@@ -92,6 +92,7 @@ module.exports = {
       },
 
       backgroundImage: {
+        'hero-bg': "url('/src/assets/images/HeroBg.png')",
         'custom-gradient':
           'linear-gradient(180deg, #F4F5F6 87.16%, rgba(244, 245, 246, 0) 137.55%)',
         'lg-hero-image-gradient':

@@ -64,12 +64,18 @@
     @apply bg-background text-foreground;
   }
   h1 {
-    @apply font-bold font-poppins text-[4rem] text-textPrimary;
+    @apply font-bold font-poppins text-[2.5rem] text-textPrimary;
   }
   button {
     @apply bg-purpleBg py-4 px-8 rounded-full text-sm text-textLight font-inter font-bold;
   }
+  .button {
+    @apply bg-purpleBg py-4 px-8 rounded-full text-sm text-textLight font-inter font-bold;
+  }
   a {
     @apply font-inter text-textLink font-bold text-sm;
+  }
+  p {
+    @apply font-inter font-normal text-base text-textLink text-center;
   }
 }

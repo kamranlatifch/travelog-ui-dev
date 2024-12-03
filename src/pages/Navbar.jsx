@@ -20,12 +20,11 @@ const Navbar = () => {
         </div>
 
         <Sheet>
-          <SheetTrigger className='bg-transparent xl:hidden'>
+          <SheetTrigger className='bg-transparent xl:hidden -mr-6'>
             <Humberger />
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              {/* <SheetTitle>Are you absolutely sure?</SheetTitle> */}
               <SheetDescription className='flex flex-col justify-center items-center'>
                 <nav className='flex flex-col gap-16  justify-center items-center'>
                   <a className='text-textPrimaryDark' href=''>
