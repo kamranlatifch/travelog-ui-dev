@@ -66,6 +66,9 @@
   h1 {
     @apply font-bold font-poppins text-[2.5rem] text-textPrimary;
   }
+  h3 {
+    @apply font-inter font-bold text-[32px] text-textPrimary;
+  }
   button {
     @apply bg-purpleBg py-4 px-8 rounded-full text-sm text-textLight font-inter font-bold;
   }
@@ -77,5 +80,8 @@
   }
   p {
     @apply font-inter font-normal text-base text-textLink text-center;
+  }
+  h6 {
+    @apply font-inter font-bold text-base text-textPink;
   }
 }
