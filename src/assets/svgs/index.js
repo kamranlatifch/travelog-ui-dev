@@ -11,3 +11,6 @@ export { ClientExpedia } from './ClientExpedia';
 export { ClientBooking } from './ClientBooking';
 export { ClientAirBnB } from './ClientAirBnB';
 export { ClientOrbits } from './ClientOrbits';
+export { ServiceBooking } from './ServiceBooking';
+export { ServiceTour } from './ServiceTour';
+export { ServiceWeather } from './ServiceWeather';
