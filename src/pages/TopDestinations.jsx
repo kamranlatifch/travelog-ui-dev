@@ -40,15 +40,14 @@ const TopDestinations = () => {
     },
   ];
   return (
-    <div className='flex flex-col px-4 py-8 lg:px-16 xl:px-[128px] gap-16'>
-      <div className='flex flex-col gap-4 '>
+    <div className='flex flex-col px-4 py-8 justify-center xl:mx-auto xl:items-center lg:px-16  xl:px-0 gap-16 xl:w-[1184px]'>
+      <div className='flex flex-col xl:self-start xl:pl-4 gap-4 '>
         <h6 className='text-center xl:text-start tracking-[5px] uppercase'>
           Top Destination
         </h6>
         <h3 className='text-center xl:text-start'>Explore top destination</h3>
       </div>
-
-      <div className='flex flex-col pt-6 xl:pt-0'>
+      <div className='flex flex-col pt-6 xl:pt-0 '>
         <Carousel className='relative '>
           <CarouselContent>
             {data.map((item) => (
