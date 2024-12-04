@@ -8,3 +8,4 @@ export { TravelPoint } from './TravelPoint';
 export { KeyFeatures } from './KeyFeatures';
 export { Testimonials } from './Testimonials';
 export { Subscribe } from './Subscribe';
+export { Footer } from './Footer';

@@ -27,6 +27,7 @@ import {
   KeyFeatures,
   Testimonials,
   Subscribe,
+  Footer,
 } from '@pages';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <KeyFeatures />
       <Testimonials />
       <Subscribe />
+      <Footer />
     </div>
   );
 }
