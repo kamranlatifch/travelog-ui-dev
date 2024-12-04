@@ -14,3 +14,4 @@ export { ClientOrbits } from './ClientOrbits';
 export { ServiceBooking } from './ServiceBooking';
 export { ServiceTour } from './ServiceTour';
 export { ServiceWeather } from './ServiceWeather';
+export { RatingSvg } from './RatingSvg';
