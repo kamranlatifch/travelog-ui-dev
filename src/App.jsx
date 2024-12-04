@@ -17,7 +17,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from '@components';
-import { Navbar, Hero, Clients, Services } from '@pages';
+import { Navbar, Hero, Clients, Services, TopDestinations } from '@pages';
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
       <Hero />
       <Clients />
       <Services />
+      <TopDestinations />
     </div>
   );
 }
