@@ -94,6 +94,8 @@ module.exports = {
 
       backgroundImage: {
         'hero-bg': "url('/src/assets/images/HeroBg.png')",
+        'testimonial-bg': "url('/src/assets/svgs/TestimonialBg.svg')",
+        'testimonialXl-bg': "url('/src/assets/svgs/TestimonailXlBg.svg')",
         'custom-gradient':
           'linear-gradient(180deg, #F4F5F6 87.16%, rgba(244, 245, 246, 0) 137.55%)',
         'lg-hero-image-gradient':

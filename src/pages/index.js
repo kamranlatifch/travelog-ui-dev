@@ -6,3 +6,4 @@ export { ServiceCard } from './ServiceCard';
 export { TopDestinations } from './TopDestinations';
 export { TravelPoint } from './TravelPoint';
 export { KeyFeatures } from './KeyFeatures';
+export { Testimonials } from './Testimonials';

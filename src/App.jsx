@@ -25,6 +25,7 @@ import {
   TopDestinations,
   TravelPoint,
   KeyFeatures,
+  Testimonials,
 } from '@pages';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <TopDestinations />
       <TravelPoint />
       <KeyFeatures />
+      <Testimonials />
     </div>
   );
 }
