@@ -16,3 +16,6 @@ export { ServiceTour } from './ServiceTour';
 export { ServiceWeather } from './ServiceWeather';
 export { RatingSvg } from './RatingSvg';
 export { TravelPointSvg } from './TravelPointSvg';
+export { MapSvg } from './MapSvg';
+export { CalendarSvg } from './CalendarSvg';
+export { CouponSvg } from './CouponSvg';
