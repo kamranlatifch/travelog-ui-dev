@@ -26,6 +26,7 @@ import {
   TravelPoint,
   KeyFeatures,
   Testimonials,
+  Subscribe,
 } from '@pages';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
       <TravelPoint />
       <KeyFeatures />
       <Testimonials />
+      <Subscribe />
     </div>
   );
 }
