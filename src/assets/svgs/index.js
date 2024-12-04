@@ -19,3 +19,5 @@ export { TravelPointSvg } from './TravelPointSvg';
 export { MapSvg } from './MapSvg';
 export { CalendarSvg } from './CalendarSvg';
 export { CouponSvg } from './CouponSvg';
+export { Email } from './Email';
+export { SubscribeSvg } from './SubscribeSvg';
