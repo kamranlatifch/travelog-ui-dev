@@ -21,3 +21,7 @@ export { CalendarSvg } from './CalendarSvg';
 export { CouponSvg } from './CouponSvg';
 export { Email } from './Email';
 export { SubscribeSvg } from './SubscribeSvg';
+export { Facebook } from './Facebook';
+export { Instagram } from './Instagram';
+export { Twitter } from './Twitter';
+export { FooterSvg } from './FooterSvg';

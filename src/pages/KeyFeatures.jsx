@@ -4,7 +4,7 @@ import { MapSvg, CalendarSvg, CouponSvg } from '@assets/svgs';
 
 const KeyFeatures = () => {
   return (
-    <div className='flex flex-col xl:flex-row-reverse px-4 lg:px-16 xl:px-0 xl:pl-[128px]  py-8 lg:py-16 gap-16 lg:gap-[70px] '>
+    <div className='flex flex-col xl:flex-row-reverse px-4 lg:px-16 xl:px-0 xl:pl-[128px] xl:justify-center py-8 lg:py-16 gap-16 lg:gap-[70px] '>
       <div className='px-6 lg:px-20 xl:px-0'>
         <img src={Image1} alt='travel' className='w-full h-full object-cover' />
       </div>
