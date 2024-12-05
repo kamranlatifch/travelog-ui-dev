@@ -62,10 +62,10 @@ const Hero = () => {
           possible{' '}
         </p>
         <div className='flex flex-col mt-4 gap-6 w-full lg:w-auto lg:flex-row'>
-          <Button className='bg-purpleBg px-8 py-6 rounded-full font-poppins font-bold text-sm'>
+          <Button className='bg-purpleBg px-8 py-6 rounded-full font-poppins font-bold text-sm '>
             Get Started
           </Button>
-          <Button className='bg-transparent text-textPrimary px-8 py-6 rounded-full font-poppins font-bold text-sm '>
+          <Button className='bg-transparent text-textPrimary px-8 py-6 rounded-full font-poppins hover:bg-transparent font-bold text-sm '>
             <VideoPlayIcon /> Watch Demo
           </Button>
         </div>
