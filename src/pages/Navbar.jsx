@@ -35,10 +35,10 @@ const Navbar = () => {
                   <a href=''>Contact</a>
                 </nav>
 
-                <Button className='bg-cardBg hover:text-textLight mt-6 shadow-none font-inter py-4 px-8 rounded-full text-sm font-bold text-primary'>
+                <Button className='bg-cardBg lg:hidden hover:text-textLight mt-6 shadow-none font-inter py-4 px-8 rounded-full text-sm font-bold text-primary'>
                   Log In
                 </Button>
-                <Button className='bg-purpleBg mt-6 py-4 px-8 rounded-full text-sm text-textLight font-inter font-bold'>
+                <Button className='bg-purpleBg lg:hidden mt-6 py-4 px-8 rounded-full text-sm text-textLight font-inter font-bold'>
                   Sign Up
                 </Button>
               </SheetDescription>
