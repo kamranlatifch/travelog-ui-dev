@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kamranlatifch.github.io/travelog-ui-dev",
   "name": "travelog-ui",
   "private": true,
   "version": "0.0.0",
@@ -7,11 +8,21 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.1",
+    "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.5.1",
+    "lucide-react": "^0.462.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
@@ -23,8 +34,10 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
+    "gh-pages": "^6.2.0",
     "globals": "^15.12.0",
     "postcss": "^8.4.49",
+    "shadcn-ui": "^0.9.3",
     "tailwindcss": "^3.4.15",
     "vite": "^6.0.1"
   }
