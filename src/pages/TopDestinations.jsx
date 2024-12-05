@@ -48,7 +48,7 @@ const TopDestinations = () => {
         <h3 className='text-center xl:text-start'>Explore top destination</h3>
       </div>
       <div className='flex flex-col pt-6 xl:pt-0 '>
-        <Carousel className='relative '>
+        <Carousel opts={{ loop: true }} className='relative '>
           <CarouselContent>
             {data.map((item) => (
               <>

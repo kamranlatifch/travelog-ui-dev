@@ -122,6 +122,115 @@ const Carousel = React.forwardRef(
 );
 Carousel.displayName = 'Carousel';
 
+const CarouselDots = React.forwardRef(({ stopFunction, ...props }, ref) => {
+  const { api } = useCarousel();
+
+  const [updateState, setUpdateState] = React.useState(false);
+
+  const toggleUpdateState = React.useCallback(
+    () => setUpdateState((prevState) => !prevState),
+
+    []
+  );
+
+  React.useEffect(() => {
+    if (api) {
+      api.on('select', toggleUpdateState);
+
+      api.on('reInit', toggleUpdateState);
+
+      return () => {
+        api.off('select', toggleUpdateState);
+
+        api.off('reInit', toggleUpdateState);
+      };
+    }
+  }, [api, toggleUpdateState]);
+
+  const numberOfSlides = api?.scrollSnapList().length || 0;
+
+  const currentSlide = api?.selectedScrollSnap() || 0;
+
+  if (numberOfSlides > 1) {
+    return (
+      // <div ref={ref} className='flex w-full justify-center'>
+      //   <div
+      //     className={`flex w-full items-center justify-between gap-1 ${props.className}`}
+      //   >
+      //     {Array.from({ length: numberOfSlides }, (_, i) => (
+      //       <>
+      //         <button
+      //           key={i}
+      //           className={`flex h-[1.875rem] w-20 items-center justify-center whitespace-nowrap px-5 py-1.5 text-sm font-semibold md:h-9 md:w-[6.25rem] md:px-[30px] md:py-2.5 2xl:h-10 2xl:w-[6.25rem] 2xl:px-6 ${
+      //             i === currentSlide
+      //               ? 'transform rounded-full bg-secondary text-tertiary '
+      //               : 'text-[#939AA6]'
+      //           }`}
+      //           aria-label={`Go to slide ${i + 1}`}
+      //           onClick={() => {
+      //             api?.scrollTo(i);
+
+      //             stopFunction();
+      //           }}
+      //         >
+      //           Step {i + 1}
+      //         </button>
+
+      //         <svg
+      //           width='67'
+      //           height='4'
+      //           viewBox='0 0 67 4'
+      //           fill='none'
+      //           xmlns='http://www.w3.org/2000/svg'
+      //           className='w-full last:hidden'
+      //         >
+      //           <circle cx='2' cy='2' r='2' fill='#D9D9D9' />
+
+      //           <circle cx='9' cy='2' r='2' fill='#D9D9D9' />
+
+      //           <circle cx='16' cy='2' r='2' fill='#D9D9D9' />
+
+      //           <circle cx='23' cy='2' r='2' fill='#D9D9D9' />
+
+      //           <circle cx='30' cy='2' r='2' fill='#D9D9D9' />
+
+      //           <circle cx='37' cy='2' r='2' fill='#D9D9D9' />
+
+      //           <circle cx='44' cy='2' r='2' fill='#D9D9D9' />
+
+      //           <circle cx='51' cy='2' r='2' fill='#D9D9D9' />
+
+      //           <circle cx='58' cy='2' r='2' fill='#D9D9D9' />
+
+      //           <circle cx='65' cy='2' r='2' fill='#D9D9D9' />
+      //         </svg>
+      //       </>
+      //     ))}
+      //   </div>
+      // </div>
+      <div ref={ref} className='flex gap-6 justify-center pt-8'>
+        {Array.from({ length: numberOfSlides }).map((_, index) => (
+          <div
+            key={index}
+            className={`w-6 h-6 rounded-full ${
+              index === currentSlide ? 'bg-textPink' : 'bg-gray-300 opacity-50'
+            }`}
+            onClick={() => {
+              api?.scrollTo(index);
+              stopFunction?.();
+            }}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+    );
+  } else {
+    return <></>;
+  }
+});
+
+CarouselDots.displayName = 'CarouselDots';
+
 const CarouselContent = React.forwardRef(({ className, ...props }, ref) => {
   const { carouselRef, orientation } = useCarousel();
 
@@ -222,4 +331,5 @@ export {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  CarouselDots,
 };

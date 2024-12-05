@@ -27,7 +27,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className='flex flex-col xl:flex-row items-center px-4 xl:justify-center lg:px-16 lg:py-16 py-8 gap-8 lg:gap-16 xl:gap-0 xl:px-0 xl:pl-[128px] xl:overflow-auto'>
+    <div className='flex flex-col xl:flex-row items-center px-4 xxl:justify-center lg:px-16 lg:py-16 py-8 gap-8 lg:gap-16 xl:gap-0 xl:px-0 xl:pl-[128px] '>
       <div className='flex flex-col gap-4 xl:min-w-[444px]'>
         <h6 className='text-center xl:text-start lg:text-2xl tracking-[5px] uppercase'>
           Services
@@ -37,7 +37,7 @@ const Services = () => {
         </h3>
       </div>
 
-      <div className='flex flex-col justify-center  lg:flex-row gap-4 xl:gap-[21px] '>
+      <div className='flex flex-col justify-center xl:justify-normal lg:flex-row gap-4 xl:gap-[21px] overflow-x-auto '>
         {data.map((item) => (
           <ServiceCard image={item.img} title={item.title} label={item.label} />
         ))}

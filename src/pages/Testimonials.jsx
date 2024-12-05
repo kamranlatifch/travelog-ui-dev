@@ -6,6 +6,7 @@ import {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  CarouselDots,
 } from '@components';
 import Image1 from '../assets/images/Destination1.png';
 
@@ -25,7 +26,7 @@ const Testimonials = () => {
         'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.',
     },
     {
-      id: 1,
+      id: 2,
       img: Image1,
       name: 'John Dow',
       title: 'Fitness Enthusiast',
@@ -35,7 +36,7 @@ const Testimonials = () => {
     },
 
     {
-      id: 1,
+      id: 3,
       img: Image1,
       name: 'Donald Trump',
       title: 'US President',
@@ -44,14 +45,6 @@ const Testimonials = () => {
         'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.',
     },
   ];
-  const [activeIndex, setActiveIndex] = useState(0);
-  const handlePrevious = () => {
-    setActiveIndex((prev) => (prev === 0 ? data.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setActiveIndex((prev) => (prev === data.length - 1 ? 0 : prev + 1));
-  };
 
   return (
     <div className='flex flex-col px-4 py-8 lg:px-[220px] xl:px-[284px] lg:bg-testimonial-bg xl:bg-testimonialXl-bg bg-no-repeat bg-cover bg-center'>
@@ -65,7 +58,7 @@ const Testimonials = () => {
       </div>
 
       <div className='flex flex-col pt-6 xl:pt-0 '>
-        <Carousel className='relative '>
+        <Carousel opts={{ loop: true }} className='relative '>
           <CarouselContent>
             {data.map((item, index) => (
               <>
@@ -83,6 +76,7 @@ const Testimonials = () => {
               </>
             ))}
           </CarouselContent>
+          <CarouselDots />
           <CarouselPrevious className='absolute  -bottom-[64px] lg:bottom-[50%]   left-0  lg:-left-[116px] lg:w-[100px] lg:h-[100px] rounded-full p-6 text-textPrimary hover:bg-purpleBg hover:text-textLight' />
           <CarouselNext className='absolute -bottom-[64px] lg:bottom-[50%]  right-0 lg:-right-[116px] lg:w-[100px] lg:h-[100px] rounded-full p-6 text-textPrimary hover:bg-purpleBg hover:text-textLight' />
         </Carousel>
