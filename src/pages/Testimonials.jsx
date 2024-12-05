@@ -76,25 +76,16 @@ const Testimonials = () => {
                     title={item.title}
                     rating={item.rating}
                     description={item.description}
+                    data={data}
                     currentIndex={index}
                   />
                 </CarouselItem>
               </>
             ))}
           </CarouselContent>
-          <CarouselPrevious className='absolute  -bottom-[124px] lg:bottom-[50%]   left-0  lg:-left-[116px] lg:w-[100px] lg:h-[100px] rounded-full p-6 text-textPrimary hover:bg-purpleBg hover:text-textLight' />
-          <CarouselNext className='absolute -bottom-[124px] lg:bottom-[50%]  right-0 lg:-right-[116px] lg:w-[100px] lg:h-[100px] rounded-full p-6 text-textPrimary hover:bg-purpleBg hover:text-textLight' />
+          <CarouselPrevious className='absolute  -bottom-[64px] lg:bottom-[50%]   left-0  lg:-left-[116px] lg:w-[100px] lg:h-[100px] rounded-full p-6 text-textPrimary hover:bg-purpleBg hover:text-textLight' />
+          <CarouselNext className='absolute -bottom-[64px] lg:bottom-[50%]  right-0 lg:-right-[116px] lg:w-[100px] lg:h-[100px] rounded-full p-6 text-textPrimary hover:bg-purpleBg hover:text-textLight' />
         </Carousel>
-      </div>
-      <div className='flex gap-6 justify-center pt-8'>
-        {Array.from({ length: data?.length }).map((_, index) => (
-          <div
-            key={index}
-            className={`w-6 h-6 rounded-full ${
-              index === activeIndex ? 'bg-textPink' : 'bg-gray-300 opacity-50'
-            }`}
-          />
-        ))}
       </div>
     </div>
   );

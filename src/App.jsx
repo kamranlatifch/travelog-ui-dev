@@ -32,9 +32,7 @@ import {
 
 function App() {
   return (
-    <div className='relative '>
-      {/* <div class='hidden lg:flex xl:hidden w-[500px] h-[500px] absolute top-[-223px] left-[-356px] bg-[#FF5722] opacity-[0.2] backdrop-blur-[500px] rounded-full'></div> */}
-
+    <div className='lg:relative overflow-hidden'>
       <Navbar />
       <Hero />
       <Clients />
@@ -45,6 +43,9 @@ function App() {
       <Testimonials />
       <Subscribe />
       <Footer />
+
+      <div className='hidden lg:flex xxl:hidden absolute  w-[406px] h-[406px] xl:w-[500px] xl:h-[500px] top-[1478px] xl:top-[847px] left-[946px] xl:left-[1351px] bg-[#FACD49] opacity-50 rounded-full shadow-2xl shadow-[#FACD49] backdrop-blur-[406px] blur-[150px] -z-10'></div>
+      <div className='hidden  lg:flex  xl:hidden absolute overflow-hidden  w-[500px] h-[500px] -top-[223px]  -left-[356px] xl:left-[1351px] bg-[#FF5722] opacity-50 rounded-full shadow-2xl shadow-[#FACD49] backdrop-blur-[406px] blur-[150px] -z-10'></div>
     </div>
   );
 }
